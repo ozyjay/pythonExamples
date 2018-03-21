@@ -1,11 +1,14 @@
 # example of a "write the function"
 # exam question
-def get_eldest(names, ages):
+'''def get_eldest(names, ages):
     current = 0
     for i in range(len(names)):
         if ages[i] > ages[current]:
             current = i
-    return names[current]
+    return names[current]'''
+def get_eldest(names, ages):
+    eldest = [names[i] for i, age in enumerate(ages) if age == max(ages)]
+    return eldest[0]
 
 
 ages_dict = {"Bill": 21, "Jane": 34, "Jack": 56}
