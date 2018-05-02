@@ -10,8 +10,8 @@ print(on_sale_products)
 
 class Person:
     def __init__(self, name="bob", age=24):
-        self.name = name # attributes of a Person
-        self.age = age
+        self.__name = name # attributes of a Person
+        self.__age = age
 
     def __repr__(self):
         return self.name
